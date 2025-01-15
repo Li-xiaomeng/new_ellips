@@ -10,6 +10,7 @@ def function_copy(function_file_path, libTT_file_path):
         
         # 打开目标文件，追加内容
         with open(libTT_file_path, 'a') as dst_file:
+            print(dst_file)
             dst_file.write('\n' + content)  # 在追加内容前添加一个换行符，避免直接连接
         
         print("内容已从 {} 复制到 {}".format(function_file_path, libTT_file_path))
